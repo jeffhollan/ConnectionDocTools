@@ -1,0 +1,2068 @@
+{
+  "value": [
+    {
+      "properties": {
+        "name": "as2",
+        "connectionParameters": {
+          "integrationAccountId": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Integration Account ID",
+              "description": "Integration Account ID",
+              "tooltip": "Provide Resource ID for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "integrationAccountUrl": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Integration Account SAS URL",
+              "description": "Integration Account SAS URL",
+              "tooltip": "Provide SAS URL for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0078d7",
+          "connectionType": "integrationAccount"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/as2"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/as2.png",
+          "displayName": "AS2",
+          "description": "AS2 lets one receive and send messages over AS2 transport protocol in business to business communications. AS2 stands for Applicability Statement 2. Data is transported securely and reliably over the Internet. Security is achieved by using digital certificates and encryption."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/as2",
+      "name": "as2",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "azureblob",
+        "connectionParameters": {
+          "accountName": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Azure Storage Account name",
+              "description": "Name of the storage account the connector should use.",
+              "tooltip": "Provide the storage account name",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "accessKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Azure Storage Account Access Key",
+              "description": "Specify a valid primary/secondary storage account access key.",
+              "tooltip": "Specify a valid primary/secondary storage account access key.",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#804998"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/azureblob"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/azureblob.png",
+          "displayName": "AzureBlob",
+          "description": "Azure Blob connector lets you perform various actions such as create, update, get, and delete on blobs in container."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/azureblob",
+      "name": "azureblob",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "box",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "box",
+              "clientId": "nc45q704t2x3liql2mvvt571f02f005t",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Box Credentials",
+              "description": "Login with Box Credentials",
+              "tooltip": "Provide Box Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#2387bd"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/box"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/box.png",
+          "displayName": "Box",
+          "description": "Box™ is a service that keeps your files safe, synced, and easy to share. Connect to Box to manage your files. You can perform various actions such as upload, update, get, and delete files in Box."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/box",
+      "name": "box",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "dropbox",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "dropbox",
+              "clientId": "enr7isvt2emic1r",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with DropBox Credentials",
+              "description": "Login with DropBox Credentials",
+              "tooltip": "Provide DropBox Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#007ee5"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/dropbox"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/dropbox.png",
+          "displayName": "Dropbox",
+          "description": "Dropbox™ is a service that keeps your files safe, synced, and easy to share. Connect to Dropbox to manage your files. You can perform various actions such as upload, update, get, and delete files in Dropbox."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/dropbox",
+      "name": "dropbox",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "dynamicscrmonline",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "dynamicscrmonlinecertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {
+                "ResourceUriAAD": {
+                  "value": "https://disco.crm.dynamics.com/"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Dynamics CRM Online Credentials",
+              "description": "Login with Dynamics CRM Online Credentials",
+              "tooltip": "Provide Dynamics CRM Online Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#00188f"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/dynamicscrmonline"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/dynamicscrmonline.png",
+          "displayName": "Dynamics CRM Online",
+          "description": "Dynamics CRM Connection Provider provides tabular data access to entities on Dynamics CRM Online."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/dynamicscrmonline",
+      "name": "dynamicscrmonline",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "excel",
+        "connectionParameters": {
+          "fileSource": {
+            "type": "connection",
+            "uiDefinition": {
+              "displayName": "Connection to file source",
+              "description": "Connection to file source",
+              "tooltip": "Provide a Connection to file source",
+              "constraints": {
+                "required": "true",
+                "dependentCapability": "blob"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#307545",
+          "fileMediaTypes": [
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "application/vnd.ms-excel"
+          ]
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/excel"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/excel.png",
+          "displayName": "Excel",
+          "description": "Microsoft Excel is a spreadsheet developed by Microsoft. Connect to Excel to manage spreadsheet data. You can perform various actions such as create, update, get, and delete on rows in a table."
+        },
+        "capabilities": [
+          "tabular",
+          "composite"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/excel",
+      "name": "excel",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "facebook",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "facebook",
+              "clientId": "1584911168422872",
+              "scopes": [
+                "public_profile",
+                "user_posts",
+                "publish_actions"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Facebook Credentials",
+              "description": "Login with Facebook Credentials",
+              "tooltip": "Provide Facebook Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#3b5998"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/facebook"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/facebook.png",
+          "displayName": "Facebook",
+          "description": "Facebook is an online social networking service that allows users to keep up with friends, upload photos, share links and videos, and learn about the people they meet.  Connect to Facebook to read posts from your timeline, post a  status update and more."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/facebook",
+      "name": "facebook",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "ftp",
+        "connectionParameters": {
+          "serverAddress": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Server Address",
+              "description": "Server Address",
+              "tooltip": "Provide Your FTP Server Address",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "userName": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "User Name",
+              "description": "User Name",
+              "tooltip": "Provide User Name",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Provide Password",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "serverPort": {
+            "type": "int",
+            "uiDefinition": {
+              "displayName": "FTP Server Port",
+              "description": "FTP Port Number (example: 21)",
+              "tooltip": "Provide FTP Server Port",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "isssl": {
+            "type": "bool",
+            "uiDefinition": {
+              "displayName": "Enable SSL?",
+              "description": "Enable SSL? (True/False)",
+              "tooltip": "Specify if SSL needs to be enabled",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "isBinaryTransport": {
+            "type": "bool",
+            "uiDefinition": {
+              "displayName": "Binary Transport?",
+              "description": "Enable Binary Transport? (True/False)",
+              "tooltip": "Specify if Binary Transport Fneeds to be enabled",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "disableCertificateValidation": {
+            "type": "bool",
+            "uiDefinition": {
+              "displayName": "Disable Certificate Validation?",
+              "description": "Disable Certificate Validation? (True/False)",
+              "tooltip": "Specify if Certificate Validation needs to be disabled",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#ff8a00"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/ftp"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/ftp.png",
+          "displayName": "FTP",
+          "description": "The File Transfer Protocol (FTP) is a standard network protocol used to transfer computer files between a client and server on a computer network. FTP is built on a client-server model architecture and uses separate control and data connections between the client and the server."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/ftp",
+      "name": "ftp",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "github",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "github",
+              "clientId": "faa5f56b825cbc649ae1",
+              "scopes": [
+                "repo"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with GitHub Credentials",
+              "description": "Login with GitHub Credentials",
+              "tooltip": "Provide GitHub Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#4078c0"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/github"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/github.png",
+          "displayName": "GitHub",
+          "description": "GitHub is a web-based Git repository hosting service. It offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/github",
+      "name": "github",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "googlecalendar",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/calendar"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Account",
+              "description": "Login with Google Account",
+              "tooltip": "Login with Google Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#3b5998"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/googlecalendar"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/googlecalendar.png",
+          "displayName": "Google Calendar",
+          "description": "Google Calendar lets you organize your schedule and share events with co-workers and friends. With Google's free online calendar, it's easy to keep track of your daily schedule."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googlecalendar",
+      "name": "googlecalendar",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "googledrive",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/drive"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Credentials",
+              "description": "Login with Google Credentials",
+              "tooltip": "Provide Google Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#20427f",
+          "fileMediaTypes": [
+            "application/vnd.google-apps.spreadsheet"
+          ]
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/googledrive"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/googledrive.png",
+          "displayName": "Google Drive",
+          "description": "Google Drive is a file storage and synchronization service created by Google. It allows users to store files in the cloud, share files, and edit documents, spreadsheets, and presentations with collaborators."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googledrive",
+      "name": "googledrive",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "googlesheet",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/drive https://spreadsheets.google.com/feeds"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Credentials",
+              "description": "Login with Google Credentials",
+              "tooltip": "Provide Google Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#20427f",
+          "fileMediaTypes": [
+            "application/vnd.google-apps.spreadsheet"
+          ]
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/googlesheet"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/googlesheet.png",
+          "displayName": "Google Sheets",
+          "description": "Connect to Google Sheets to manage your spreadsheets. You can create, edit, and collaborate with others on spreadsheets."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googlesheet",
+      "name": "googlesheet",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "googletasks",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/tasks"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Account",
+              "description": "Login with Google Account",
+              "tooltip": "Login with Google Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#3b5998"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/googletasks"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/googletasks.png",
+          "displayName": "Google Tasks",
+          "description": "Google Tasks is a very simple task list. Works inside Gmail, Android, and Calendar seamlessly."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googletasks",
+      "name": "googletasks",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "instagram",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "instagram",
+              "clientId": "302ad4170bcf433c87cb44091f242487",
+              "scopes": [
+                "basic"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Instagram Credentials",
+              "description": "Login with Instagram Credentials",
+              "tooltip": "Provide Instagram Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#3f729b"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/instagram"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/instagram.png",
+          "displayName": "Instagram",
+          "description": "Instagram is an online service for sharing pictures with friends and family.  Connect to Instagram API to read photo streams on your Instagram account."
+        },
+        "capabilities": [
+          "actions",
+          "trigger"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/instagram",
+      "name": "instagram",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "mailchimp",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "mailchimp",
+              "clientId": "717193793226",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with MailChimp Credentials",
+              "description": "Login with MailChimp Credentials",
+              "tooltip": "Provide MailChimp Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#249AB9"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/mailchimp"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/mailchimp.png",
+          "displayName": "MailChimp",
+          "description": "MailChimp™ is an online service that allows businesses to manage and automate email marketing activities, including sending marketing emails, automated messages and targeted campaigns."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/mailchimp",
+      "name": "mailchimp",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "mandrill",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Mandrill API Key",
+              "description": "Mandrill API Key",
+              "tooltip": "Provide Your Mandrill API Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#42413F"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/mandrill"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/mandrill.png",
+          "displayName": "Mandrill",
+          "description": "Mandrill™ is a transactional email API for MailChimp users. It's reliable, powerful, and ideal for sending data driven emails, including targeted e-commerce and personalized one-to-one messages."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/mandrill",
+      "name": "mandrill",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "microsofttranslator",
+        "connectionParameters": {},
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0078D7",
+          "connectionLimits": {
+            "*": 1
+          }
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/microsofttranslator"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/microsofttranslator.png",
+          "displayName": "Microsoft Translator",
+          "description": "Microsoft Translator is a cloud-based automatic translation service. Connect to Microsoft Translator to perform text translations. You can perform various actions such as detect languages, translate text, etc."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/microsofttranslator",
+      "name": "microsofttranslator",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "office365",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "office365certificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Office 365 Credentials",
+              "description": "Login with Office 365 Credentials",
+              "tooltip": "Provide Office 365 Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#eb3c00"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/office365"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/office365.png",
+          "displayName": "Office 365",
+          "description": "Microsoft Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365",
+      "name": "office365",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "office365users",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "office365usercertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Office365 Credentials",
+              "description": "Login with Office365 Credentials",
+              "tooltip": "Provide Office365 Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#eb3c00"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/office365users"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/office365users.png",
+          "displayName": "Office 365 Users",
+          "description": "Office 365 is a service that allows the use of Office applications and other productivity services over the Internet. Connect to Office 365 Users to access user profiles in your organization. You can perform various actions such as get a user's profile, a user's manager or direct reports, etc."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365users",
+      "name": "office365users",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "office365video",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "sharepointonlinecertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with SharePoint Online Credentials",
+              "description": "Login with SharePoint Online Credentials",
+              "tooltip": "Provide SharePoint Online Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1b75bc"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/office365video"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/office365video.png",
+          "displayName": "Office 365 Video",
+          "description": "Office 365 is a service that allows the use of Office applications and other productivity services over the Internet. Connect to to Office 365 Videos to interact with videos using your Office 365 account. You can perform various actions such as get a list of channels, get information about a particular channel, get list of videos on a channel, get information about a video and get information about playing a video."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365video",
+      "name": "office365video",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "onedrive",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "onedrive",
+              "clientId": "44da0bc6-ecea-41e8-a74c-532e754b2e68",
+              "scopes": [
+                "wl.signin wl.emails wl.offline_access onedrive.readwrite"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with OneDrive Credentials",
+              "description": "Login with OneDrive Credentials",
+              "tooltip": "Provide OneDrive Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#094ab2"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/onedrive"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/onedrive.png",
+          "displayName": "OneDrive",
+          "description": "Connect to OneDrive to manage your files. You can perform various actions such as upload, update, get, and delete on files in OneDrive."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/onedrive",
+      "name": "onedrive",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "onedriveforbusiness",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "office365certificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {
+                "Capability": {
+                  "value": "MyFiles"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with OneDrive for Business Credentials",
+              "description": "Login with OneDrive for Business Credentials",
+              "tooltip": "Provide OneDrive for Business Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#2151A3"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/onedriveforbusiness"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/onedriveforbusiness.png",
+          "displayName": "OneDrive for Business",
+          "description": "OneDrive for Business is a cloud storage, file hosting service that allows users to sync files and later access them from a web browser or mobile device. Connect to OneDrive for Business to manage your files. You can perform various actions such as upload, update, get, and delete files."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/onedriveforbusiness",
+      "name": "onedriveforbusiness",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "outlook",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "outlook",
+              "clientId": "44da0bc6-ecea-41e8-a74c-532e754b2e68",
+              "scopes": [
+                "https://outlook.office.com/mail.readwrite https://outlook.office.com/mail.send https://outlook.office.com/contacts.readwrite https://outlook.office.com/calendars.readwrite"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Outlook.com Credentials",
+              "description": "Login with Outlook.com Credentials",
+              "tooltip": "Provide Outlook.com Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0072c6"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/outlook"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/outlook.png",
+          "displayName": "Outlook.com",
+          "description": "Outlook.com connector allows you to manage your mail, calendars, and contacts. You can perform various actions such as send mail, schedule meetings, add contacts, etc."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/outlook",
+      "name": "outlook",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "projectonline",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "sharepointonlinecertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with ProjectOnline Credentials",
+              "description": "Login with ProjectOnline Credentials",
+              "tooltip": "Provide ProjectOnline Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#2D772A"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/projectonline"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/projectonline.png",
+          "displayName": "Project Online",
+          "description": "Project Online is a flexible online solution for project portfolio management (PPM) and everyday work from Microsoft. Delivered through Office 365, Project Online enables organizations to get started quickly with powerful project management capabilities to plan, prioritize, and manage projects and project portfolio investments-from almost anywhere on almost any device."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/projectonline",
+      "name": "projectonline",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "rss",
+        "connectionParameters": {},
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#ff9900"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/rss"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/rss.png",
+          "displayName": "RSS",
+          "description": "RSS is a popular web syndication format used to publish frequently updated content ? like blog entries and news headlines.  Many content publishers provide an RSS feed to allow users to subscribe to it.  Use the RSS connector to retrieve feed information and trigger flows when new items are published in an RSS feed."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/rss",
+      "name": "rss",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "salesforce",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "salesforce",
+              "clientId": "3MVG9fMtCkV6eLhcTB8jo.tx0X7AfQvXydoskslvPAODVJPQSeSPpCPhmkqjwpns2NMWYCoSH7gYU.NHKnWp0",
+              "scopes": [
+                "api",
+                "refresh_token"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Salesforce Credentials",
+              "description": "Login with Salesforce Credentials",
+              "tooltip": "Provide Salesforce Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "token:LoginUri": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "https://login.salesforce.com"
+              },
+              {
+                "value": "https://test.salesforce.com"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Login URI (Environment)",
+              "description": "The Salesforce Login URI. For Production, leave blank or use https://login.salesforce.com",
+              "tooltip": "The Salesforce Login URI. Leave blank for Production",
+              "constraints": {
+                "required": false,
+                "allowedValues": [
+                  {
+                    "text": "Production",
+                    "value": "https://login.salesforce.com"
+                  },
+                  {
+                    "text": "Sandbox",
+                    "value": "https://test.salesforce.com"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1EB8EB"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/salesforce"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/salesforce.png",
+          "displayName": "Salesforce",
+          "description": "The Salesforce Connector provides an API to work with Salesforce objects."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/salesforce",
+      "name": "salesforce",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "sendgrid",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "SendGrid Api Key",
+              "description": "SendGrid Api Key",
+              "tooltip": "Provide Your SendGrid Api Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#34455F"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/sendgrid"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/sendgrid.png",
+          "displayName": "SendGrid",
+          "description": "SendGrid is an email delivery infrastructure service which allows users to send transactional or marketing email. "
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sendgrid",
+      "name": "sendgrid",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "servicebus",
+        "connectionParameters": {
+          "connectionString": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Connection String",
+              "description": "Azure Service Bus Connection String",
+              "tooltip": "Provide Azure Service Bus Connection String",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#7fba00"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/servicebus"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/servicebus.png",
+          "displayName": "Service Bus",
+          "description": "Connect to Azure Service Bus to send and receive messages. You can perform actions such as send to queue, send to topic, receive from queue, receive from subscription, etc."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/servicebus",
+      "name": "servicebus",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "sftp",
+        "connectionParameters": {
+          "hostName": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Host Server Address",
+              "description": "Host Server Address",
+              "tooltip": "Provide Host Server Address",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "userName": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "User Name",
+              "description": "User Name",
+              "tooltip": "Provide User Name",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Provide Password",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "portNumber": {
+            "type": "int",
+            "uiDefinition": {
+              "displayName": "Port Number",
+              "description": "SFTP Port Number (example: 22)",
+              "tooltip": "Provide Port Number",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "giveUpSecurityAndAcceptAnySshHostKey": {
+            "type": "bool",
+            "uiDefinition": {
+              "displayName": "Disable SSH Host Key Validation",
+              "description": "Disable SSH Host Key Validation? (True/False)",
+              "tooltip": "Specify if SSH Host Key Validation needs to be disabled",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "sshHostKeyFingerprint": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "SSH Host Key Finger-print",
+              "description": "SSH Host Key Finger-print",
+              "tooltip": "Provide SSH Host Key Finger-print",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#e8bb00"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/sftp"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/sftp.png",
+          "displayName": "SFTP",
+          "description": "Connect to SFTP API to send and receive files. You can perform various operations such as create, update, get or delete files."
+        },
+        "capabilities": [
+          "blob"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sftp",
+      "name": "sftp",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "sharepointonline",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "sharepointonlinecertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with SharePoint Online Credentials",
+              "description": "Login with SharePoint Online Credentials",
+              "tooltip": "Provide SharePoint Online Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1b75bc"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/sharepointonline"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/sharepoint.png",
+          "displayName": "SharePoint Online",
+          "description": "SharePoint Online is a cloud-based service that helps organizations share and collaborate with colleagues, partners, and customers. Connect to SharePoint Online to manage documents and list items. You can perform various actions such as create, update, get, and delete on documents and list items."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline",
+      "name": "sharepointonline",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "slack",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "slack",
+              "clientId": "3414960201.20026319686",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Slack Credentials",
+              "description": "Login with Slack Credentials",
+              "tooltip": "Provide Slack Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#6ecadc"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/slack"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/slack.png",
+          "displayName": "Slack",
+          "description": "Slack is a team communication tool, that brings together all of your team communications in one place, instantly searchable and available wherever you go."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/slack",
+      "name": "slack",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "smtp",
+        "connectionParameters": {
+          "serverAddress": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "SMTP Server Address",
+              "description": "SMTP Server Address",
+              "tooltip": "Provide Your SMTP Server Address",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "userName": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "User Name",
+              "description": "User Name",
+              "tooltip": "Provide User Name",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Provide Password",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "port": {
+            "type": "int",
+            "uiDefinition": {
+              "displayName": "SMTP Server Port",
+              "description": "SMTP Port Number (example: 587)",
+              "tooltip": "Provide SMTP Server Port",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          },
+          "enableSSL": {
+            "type": "bool",
+            "uiDefinition": {
+              "displayName": "Enable SSL?",
+              "description": "Enable SSL? (True/False)",
+              "tooltip": "Specify if SSL needs to be enabled",
+              "constraints": {
+                "required": "false"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#e75300"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/smtp"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/smtp.png",
+          "displayName": "SMTP",
+          "description": "Connect to SMTP to send email."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/smtp",
+      "name": "smtp",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "sparkpost",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "SparkPost API Key",
+              "description": "SparkPost API Key",
+              "tooltip": "Provide Your SparkPost API Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#FA6423"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/sparkpost"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/sparkpost.png",
+          "displayName": "SparkPost",
+          "description": "SparkPost API allows you to manage email recipient lists and send emails"
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sparkpost",
+      "name": "sparkpost",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "sql",
+        "connectionParameters": {
+          "sqlConnectionString": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "SQL Connection String",
+              "description": "SQL Connection String",
+              "tooltip": "Provide Your SQL Connection String",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#ba141a"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/sql"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/sql.png",
+          "displayName": "Sql Azure",
+          "description": "Microsoft SQL Server is a relational database management system developed by Microsoft. Connect to SQL Server to manage data. You can perform various actions such as create, update, get, and delete on rows in a table."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sql",
+      "name": "sql",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "trello",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "trello",
+              "clientId": "812aac1ad766c74e3094b265b908bd4a",
+              "scopes": [
+                "read",
+                "write"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {
+                "ApplicationDisplayName": {
+                  "value": "Power Apps"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Trello Credentials",
+              "description": "Login with Trello Credentials",
+              "tooltip": "Provide Trello Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0079BF"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/trello"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/trello.png",
+          "displayName": "Trello",
+          "description": "Trello gives you perspective over all your projects, at work and at home.  It is an easy, free, flexible, and visual way to manage your projects and organize anything.  Connect to Trello to manage your boards, lists and cards."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/trello",
+      "name": "trello",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "twilio",
+        "connectionParameters": {
+          "sid": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Twilio Account Id",
+              "description": "Twilio Account Id",
+              "tooltip": "Provide Your Twilio Account Id",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "token": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Twilio Access Token",
+              "description": "Twilio Access Token",
+              "tooltip": "Twilio Access Token",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#e22228"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/twilio"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/twilio.png",
+          "displayName": "Twilio",
+          "description": "Twilio is a service that enables apps to send and receive global SMS, MMS and IP messages."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/twilio",
+      "name": "twilio",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "twitter",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "twitter",
+              "clientId": "bChNxr15F587ndSfLbiuXCiCu",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Twitter Credentials",
+              "description": "Login with Twitter Credentials",
+              "tooltip": "Provide Your Twitter Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#5fa9dd",
+          "connectionLimits": {
+            "*": 2
+          }
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/twitter"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/twitter.png",
+          "displayName": "Twitter",
+          "description": "Twitter Connection Provider lets you post tweets and get tweets, timeline, friends and followers from your Twitter account."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/twitter",
+      "name": "twitter",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "wunderlist",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "wunderlist",
+              "clientId": "5fa5b61c1e8c79d6a58d",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Wunderlist Credentials",
+              "description": "Login with Wunderlist Credentials",
+              "tooltip": "Provide Wunderlist Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#de4c40"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/wunderlist"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/wunderlist.png",
+          "displayName": "Wunderlist",
+          "description": "Wunderlist provide a todo list and task manager to help people get their stuff done.  Whether you?re sharing a grocery list with a loved one, working on a project, or planning a vacation, Wunderlist makes it easy to capture, share, and complete your to?dos. Wunderlist instantly syncs between your phone, tablet and computer, so you can access all your tasks from anywhere."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/wunderlist",
+      "name": "wunderlist",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "x12",
+        "connectionParameters": {
+          "integrationAccountId": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Integration Account ID",
+              "description": "Integration Account ID",
+              "tooltip": "Provide Resource ID for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "integrationAccountUrl": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Integration Account SAS URL",
+              "description": "Integration Account SAS URL",
+              "tooltip": "Provide SAS URL for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#59b4d9",
+          "connectionType": "integrationAccount"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/x12"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/x12.png",
+          "displayName": "X12",
+          "description": "X12 lets you perform encode to and decode from an X12 message."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/x12",
+      "name": "x12",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "yammer",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "yammer",
+              "clientId": "Mwe8rdOp2Hl6X2Gt8cF6g",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Yammer Credentials",
+              "description": "Login with Yammer Credentials",
+              "tooltip": "Provide Yammer Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0092bd"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/yammer"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/yammer.png",
+          "displayName": "Yammer",
+          "description": "Yammer is a leading social network for businesses to get work done smarter and faster. Connect to Yammer to access conversations in your enterprise network."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/yammer",
+      "name": "yammer",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    },
+    {
+      "properties": {
+        "name": "youtube",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/youtube"
+              ],
+              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {}
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Account",
+              "description": "Login with Google Account",
+              "tooltip": "Login with Google Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#CD201F"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-eastus.azure-apim.net/apim/youtube"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/youtube.png",
+          "displayName": "YouTube",
+          "description": "YouTube allows billions of people to discover, watch and share originally-created videos. YouTube provides a forum for people to connect, inform, and inspire others across the globe and acts as a distribution platform for original content creators and advertisers large and small."
+        },
+        "capabilities": [
+          "actions",
+          "triggers"
+        ]
+      },
+      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/youtube",
+      "name": "youtube",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "eastus"
+    }
+  ]
+}
