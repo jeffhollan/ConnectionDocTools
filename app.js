@@ -6,6 +6,7 @@ var run = function(){
         if(err) throw err;
         console.log('File read successully.  Parsing connector names...\n\n');
         parseJson(data);
+        parseJsonFileReferences(data);
     });
 }
 
@@ -20,6 +21,17 @@ var parseJson = function(input) {
     }
     console.log(file);
     fs.writeFile('connectors.json', file);
+}
+
+var parseJsonFileReferences = function(input) {
+    var file = "";
+    var json = JSON.parse(input);
+    for (var value in json['value'])
+    {
+        file = file + "[" + json['value'][value]['properties']['generalInformation']['displayName'].replace(/ /g, '-') +"icon]: ./media/apis-list/" +  
+            json['value'][value]['name'] + ".png\n";
+    }
+    fs.writeFile('connectors-with-images.json', file);
 }
 
 run();

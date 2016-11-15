@@ -2,6 +2,54 @@
   "value": [
     {
       "properties": {
+        "name": "appfigures",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "appfigures",
+              "clientId": "b077a994bd6241d0803be46057ff57dd",
+              "scopes": [
+                "account:write, private:read, public:read, products:write"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with appFigures Account",
+              "description": "Login with appFigures Account",
+              "tooltip": "Login with appFigures Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#F24B18"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/appfigures"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/appfigures.png",
+          "displayName": "appFigures",
+          "description": "appFigures is a reporting platform for mobile app developers. It brings together all of your app store sales, ad data, worldwide reviews, and hourly rank updates based off of the available reports from your synced accounts."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/appfigures",
+      "name": "appfigures",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
         "name": "as2",
         "connectionParameters": {
           "integrationAccountId": {
@@ -33,7 +81,7 @@
           "connectionType": "integrationAccount"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/as2"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/as2"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/as2.png",
@@ -44,10 +92,66 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/as2",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/as2",
       "name": "as2",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "asana",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "oauth2",
+              "clientId": "178048178563999",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {
+                "authorizationUrl": {
+                  "value": "https://app.asana.com/-/oauth_authorize"
+                },
+                "tokenUrl": {
+                  "value": "https://app.asana.com/-/oauth_token"
+                },
+                "refreshUrl": {
+                  "value": "https://app.asana.com/-/oauth_token"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Asana credentials",
+              "description": "Login with Asana credentials",
+              "tooltip": "Login with Asana credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#273347"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/asana"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/asana.png",
+          "displayName": "Asana",
+          "description": "Asana enables teams to manage their projects and tasks in one place."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/asana",
+      "name": "asana",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -81,21 +185,326 @@
           "brandColor": "#804998"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/azureblob"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/azureblob"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/azureblob.png",
-          "displayName": "AzureBlob",
-          "description": "Azure Blob connector lets you perform various actions such as create, update, get, and delete on blobs in container."
+          "displayName": "AzureBlobStorage",
+          "description": "Microsoft Azure Storage provides a massively scalable, durable, and highly available storage for data on the cloud, and serves as the data storage solution for modern applications. Connect to Blob Storage to perform various operations such as create, update, get and delete on blobs in your Azure Storage account."
         },
         "capabilities": [
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/azureblob",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/azureblob",
       "name": "azureblob",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "azureml",
+        "connectionParameters": {},
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#007ee5"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/azureml"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az820139.vo.msecnd.net/icons/machinelearning.png",
+          "displayName": "Azure ML",
+          "description": "Azure ML Connector lets you batch and retraining jobs."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/azureml",
+      "name": "azureml",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "basecamp",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "Basecamp",
+              "clientId": "ea0cec0acdab407f873928a9ad064385955708b4",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Basecamp Account",
+              "description": "Login with Basecamp Account",
+              "tooltip": "Login with Basecamp Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1BAD4B"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/basecamp"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/basecamp.png",
+          "displayName": "Basecamp 3",
+          "description": "Basecamp 3 is a tool that helps teams work together. It provides a dashboard to manage all messaging, document collaboration, scheduling and task management together in one place."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/basecamp",
+      "name": "basecamp",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "bitly",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "oauth2",
+              "clientId": "dadae425fa764d060ab75bef6b6f629ff2a3dc44",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {
+                "authorizationUrl": {
+                  "value": "https://bitly.com/oauth/authorize"
+                },
+                "tokenUrl": {
+                  "value": "https://api-ssl.bitly.com/oauth/access_token"
+                },
+                "refreshUrl": {},
+                "tokenBodyTemplate": {
+                  "value": "code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Bitly credentials",
+              "description": "Login with Bitly credentials",
+              "tooltip": "Login with Bitly credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0e3042"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/bitly"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/bitly.png",
+          "displayName": "Bitly",
+          "description": "Bitly is a link management tool. You can shorten links, reroute existing ones and associate them with campaigns across channels and devices."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/bitly",
+      "name": "bitly",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "biztalk",
+        "connectionParameters": {
+          "server": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "BizTalk Server URL",
+              "description": "BizTalk Server URL",
+              "tooltip": "BizTalk Server URL",
+              "constraints": {
+                "tabIndex": 1,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "windows"
+              },
+              {
+                "value": "anonymous"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication Type",
+              "description": "Authentication type to connect to your BizTalk Server",
+              "tooltip": "Authentication type to connect to your BizTalk Server",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "true",
+                "allowedValues": [
+                  {
+                    "text": "Windows",
+                    "value": "windows"
+                  },
+                  {
+                    "text": "Anonymous",
+                    "value": "anonymous"
+                  }
+                ],
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username credential",
+              "tooltip": "Username credential",
+              "constraints": {
+                "tabIndex": 3,
+                "clearText": true,
+                "required": "false",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password credential",
+              "tooltip": "Password credential",
+              "constraints": {
+                "tabIndex": 4,
+                "required": "false",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "Biztalk",
+              "connectionDetails": [
+                "server"
+              ]
+            },
+            "uiDefinition": {
+              "constraints": {
+                "tabIndex": 5,
+                "required": "false",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#8b8b8b"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/biztalk"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az820139.vo.msecnd.net/icons/biztalk.png",
+          "displayName": "BizTalk Server",
+          "description": "BizTalk Server connector is part of Microsoft’s hybrid integration platform. Use this connector to run BizTalk based applications side by side with Logic Apps to connect with On-Premise Line of Business systems."
+        },
+        "capabilities": [
+          "actions",
+          "gateway",
+          "cloud"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/biztalk",
+      "name": "biztalk",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "blogger",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "Google",
+              "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/blogger"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Google Account",
+              "description": "Login with Google Account",
+              "tooltip": "Login with Google Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#3B5998"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/blogger"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/blogger.png",
+          "displayName": "Blogger",
+          "description": "Blogger is a blog publishing service. It allows you to create websites and post to them on an ongoing basis."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/blogger",
+      "name": "blogger",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -104,14 +513,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "box",
-              "clientId": "nc45q704t2x3liql2mvvt571f02f005t",
+              "identityProvider": "Box",
+              "clientId": "0frf8i0qfkpdmsrxdxwml3911wr4oho6",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Box Credentials",
@@ -128,7 +536,7 @@
           "brandColor": "#2387bd"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/box"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/box"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/box.png",
@@ -139,10 +547,323 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/box",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/box",
       "name": "box",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "campfire",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "Basecamp",
+              "clientId": "ea0cec0acdab407f873928a9ad064385955708b4",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Basecamp Account",
+              "description": "Login with Basecamp Account",
+              "tooltip": "Login with Basecamp Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#A0F315"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/campfire"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/campfire.png",
+          "displayName": "Campfire",
+          "description": "Campfire is an instant messaging tool used for communication and file sharing within teams."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/campfire",
+      "name": "campfire",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "cognitiveservicestextanalytics",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Account Key",
+              "description": "Cognitive Services Account Key",
+              "tooltip": "Provide a Congitive Services Account Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#019681"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/cognitiveservicestextanalytics"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/cognitiveservicestextanalytics.png",
+          "displayName": "Cognitive Services Text Analytics",
+          "description": "Azure Cognitive Services Text Analytics detects language, sentiment and more of the text you provide."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/cognitiveservicestextanalytics",
+      "name": "cognitiveservicestextanalytics",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "crmservicebus",
+        "connectionParameters": {
+          "connectionString": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Connection String",
+              "description": "Azure Service Bus Connection String",
+              "tooltip": "Provide Azure Service Bus Connection String",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#16244E"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/crmservicebus"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/dynamicscrmonline.png",
+          "displayName": "Dynamics 365",
+          "description": "A Service Bus connector for Logic Apps that reads messages posted by Dynamics 365."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/crmservicebus",
+      "name": "crmservicebus",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "db2",
+        "connectionParameters": {
+          "server": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Server",
+              "description": "Server",
+              "tooltip": "Server",
+              "constraints": {
+                "tabIndex": 1,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "database": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Database",
+              "description": "Database",
+              "tooltip": "Database",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "windows"
+              },
+              {
+                "value": "basic"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication",
+              "description": "Authentication type",
+              "tooltip": "Authentication type",
+              "constraints": {
+                "tabIndex": 3,
+                "required": "false",
+                "allowedValues": [
+                  {
+                    "text": "Windows",
+                    "value": "windows"
+                  },
+                  {
+                    "text": "Basic",
+                    "value": "basic"
+                  }
+                ],
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username",
+              "tooltip": "Username",
+              "constraints": {
+                "tabIndex": 4,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Password",
+              "constraints": {
+                "tabIndex": 5,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "db2",
+              "connectionDetails": [
+                "server",
+                "database"
+              ]
+            },
+            "uiDefinition": {
+              "constraints": {
+                "tabIndex": 6,
+                "required": "false",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#466bb0"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/db2"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/DB2.png",
+          "displayName": "DB2",
+          "description": "Microsoft Connector for DB2 integrates Azure applications with resources stored in an IBM DB2 database. Connector supports SELECT, INSERT, UPDATE, and DELETE operations."
+        },
+        "capabilities": [
+          "tabular",
+          "gateway",
+          "cloud"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/db2",
+      "name": "db2",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "documentdb",
+        "connectionParameters": {
+          "databaseAccount": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Database account name",
+              "description": "Database account name",
+              "tooltip": "Database account name",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "accessKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Access Key to your DocumentDB account",
+              "description": "Access Key to your DocumentDB account",
+              "tooltip": "Access Key to your DocumentDB account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#003056"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/documentdb"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/documentdb.png",
+          "displayName": "Azure DocumentDB",
+          "description": "Azure DocumentDB is a NoSQL service for highly available, globally distributed app. Sign into your DocumentDB account to create, update, and query documents and more. "
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/documentdb",
+      "name": "documentdb",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -151,14 +872,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "dropbox",
+              "identityProvider": "Dropbox",
               "clientId": "enr7isvt2emic1r",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with DropBox Credentials",
@@ -175,21 +895,72 @@
           "brandColor": "#007ee5"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/dropbox"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/dropbox"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/dropbox.png",
           "displayName": "Dropbox",
-          "description": "Dropbox™ is a service that keeps your files safe, synced, and easy to share. Connect to Dropbox to manage your files. You can perform various actions such as upload, update, get, and delete files in Dropbox."
+          "description": "Dropbox is a service that keeps your files safe, synced, and easy to share. Connect to Dropbox to manage your files. You can perform various actions such as upload, update, get, and delete files in Dropbox."
         },
         "capabilities": [
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/dropbox",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/dropbox",
       "name": "dropbox",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "dynamicsax",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "aadcertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {
+                "resourceUri": {
+                  "value": "00000015-0000-0000-c000-000000000000"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Microsoft Dynamics 365 for Operations credentials",
+              "description": "Login with Microsoft Dynamics 365 for Operations credentials",
+              "tooltip": "Provide Microsoft Dynamics 365 for Operations Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#16244E"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/dynamicsax"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/axonline.png",
+          "displayName": "Dynamics 365 for Operations",
+          "description": "Microsoft Dynamics 365 for Operations connector provides access to data entities."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/dynamicsax",
+      "name": "dynamicsax",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -201,20 +972,20 @@
               "identityProvider": "dynamicscrmonlinecertificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
               },
               "customParameters": {
-                "ResourceUriAAD": {
+                "resourceUriAAD": {
                   "value": "https://disco.crm.dynamics.com/"
                 }
               }
             },
             "uiDefinition": {
-              "displayName": "Login with Dynamics CRM Online Credentials",
-              "description": "Login with Dynamics CRM Online Credentials",
-              "tooltip": "Provide Dynamics CRM Online Credentials",
+              "displayName": "Login with Dynamics 365 Credentials",
+              "description": "Login with Dynamics 365 Credentials",
+              "tooltip": "Provide Dynamics 365 Credentials",
               "constraints": {
                 "required": "true"
               }
@@ -223,67 +994,123 @@
         },
         "metadata": {
           "source": "marketplace",
-          "brandColor": "#00188f"
+          "brandColor": "#16244E"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/dynamicscrmonline"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/dynamicscrmonline"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/dynamicscrmonline.png",
-          "displayName": "Dynamics CRM Online",
-          "description": "Dynamics CRM Connection Provider provides tabular data access to entities on Dynamics CRM Online."
+          "displayName": "Dynamics 365",
+          "description": "Connect to Dynamics 365 to view the data."
         },
         "capabilities": [
+          "actions",
+          "trigger",
           "tabular"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/dynamicscrmonline",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/dynamicscrmonline",
       "name": "dynamicscrmonline",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
-        "name": "excel",
+        "name": "easyredmine",
         "connectionParameters": {
-          "fileSource": {
-            "type": "connection",
+          "apiKey": {
+            "type": "securestring",
             "uiDefinition": {
-              "displayName": "Connection to file source",
-              "description": "Connection to file source",
-              "tooltip": "Provide a Connection to file source",
+              "displayName": "API Key",
+              "description": "API Key",
+              "tooltip": "Provide Your API Key",
               "constraints": {
-                "required": "true",
-                "dependentCapability": "blob"
+                "required": "true"
+              }
+            }
+          },
+          "siteUrl": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Site url",
+              "description": "Root site url (Example: https://my.easyredmine.com )",
+              "tooltip": "Provide Your Site url",
+              "constraints": {
+                "required": "true"
               }
             }
           }
         },
         "metadata": {
           "source": "marketplace",
-          "brandColor": "#307545",
-          "fileMediaTypes": [
-            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-            "application/vnd.ms-excel"
-          ]
+          "brandColor": "#009ee0"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/excel"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/easyredmine"
         ],
         "generalInformation": {
-          "iconUrl": "https://az818438.vo.msecnd.net/icons/excel.png",
-          "displayName": "Excel",
-          "description": "Microsoft Excel is a spreadsheet developed by Microsoft. Connect to Excel to manage spreadsheet data. You can perform various actions such as create, update, get, and delete on rows in a table."
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/easyredmine.png",
+          "displayName": "Easy Redmine",
+          "description": "Easy Redmine is a web based tool for software project management."
         },
         "capabilities": [
-          "tabular",
-          "composite"
+          "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/excel",
-      "name": "excel",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/easyredmine",
+      "name": "easyredmine",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "edifact",
+        "connectionParameters": {
+          "integrationAccountId": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Integration Account ID",
+              "description": "Integration Account ID",
+              "tooltip": "Provide Resource ID for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "integrationAccountUrl": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Integration Account SAS URL",
+              "description": "Integration Account SAS URL",
+              "tooltip": "Provide SAS URL for the integration account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#59b4d9",
+          "connectionType": "integrationAccount"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/edifact"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/edifact.png",
+          "displayName": "EDIFACT",
+          "description": "EDIFACT lets you perform encode to and decode from an EDIFACT message."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/edifact",
+      "name": "edifact",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -292,18 +1119,17 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "facebook",
+              "identityProvider": "Facebook",
               "clientId": "1584911168422872",
               "scopes": [
                 "public_profile",
                 "user_posts",
                 "publish_actions"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Facebook Credentials",
@@ -320,22 +1146,22 @@
           "brandColor": "#3b5998"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/facebook"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/facebook"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/facebook.png",
           "displayName": "Facebook",
-          "description": "Facebook is an online social networking service that allows users to keep up with friends, upload photos, share links and videos, and learn about the people they meet.  Connect to Facebook to read posts from your timeline, post a  status update and more."
+          "description": "Facebook API allows you to access and publish posts on your Facebook user account"
         },
         "capabilities": [
           "actions",
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/facebook",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/facebook",
       "name": "facebook",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -401,7 +1227,7 @@
             "uiDefinition": {
               "displayName": "Binary Transport?",
               "description": "Enable Binary Transport? (True/False)",
-              "tooltip": "Specify if Binary Transport Fneeds to be enabled",
+              "tooltip": "Specify if Binary Transport needs to be enabled",
               "constraints": {
                 "required": "false"
               }
@@ -424,7 +1250,7 @@
           "brandColor": "#ff8a00"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/ftp"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/ftp"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/ftp.png",
@@ -435,10 +1261,10 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/ftp",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/ftp",
       "name": "ftp",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -447,16 +1273,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "github",
-              "clientId": "faa5f56b825cbc649ae1",
+              "identityProvider": "GitHub",
+              "clientId": "3a8a65e4e28a7d023040",
               "scopes": [
                 "repo"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with GitHub Credentials",
@@ -473,7 +1298,7 @@
           "brandColor": "#4078c0"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/github"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/github"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/github.png",
@@ -485,10 +1310,10 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/github",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/github",
       "name": "github",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -497,16 +1322,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "google",
+              "identityProvider": "Google",
               "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
               "scopes": [
                 "https://www.googleapis.com/auth/calendar"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Google Account",
@@ -523,7 +1347,7 @@
           "brandColor": "#3b5998"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/googlecalendar"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/googlecalendar"
         ],
         "generalInformation": {
           "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/googlecalendar.png",
@@ -531,14 +1355,13 @@
           "description": "Google Calendar lets you organize your schedule and share events with co-workers and friends. With Google's free online calendar, it's easy to keep track of your daily schedule."
         },
         "capabilities": [
-          "actions",
-          "triggers"
+          "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googlecalendar",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/googlecalendar",
       "name": "googlecalendar",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -547,16 +1370,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "google",
+              "identityProvider": "Google",
               "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
               "scopes": [
                 "https://www.googleapis.com/auth/drive"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Google Credentials",
@@ -576,7 +1398,7 @@
           ]
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/googledrive"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/googledrive"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/googledrive.png",
@@ -587,10 +1409,10 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googledrive",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/googledrive",
       "name": "googledrive",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -599,16 +1421,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "google",
+              "identityProvider": "Google",
               "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
               "scopes": [
                 "https://www.googleapis.com/auth/drive https://spreadsheets.google.com/feeds"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Google Credentials",
@@ -628,7 +1449,7 @@
           ]
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/googlesheet"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/googlesheet"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/googlesheet.png",
@@ -639,10 +1460,10 @@
           "tabular"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googlesheet",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/googlesheet",
       "name": "googlesheet",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -651,16 +1472,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "google",
+              "identityProvider": "Google",
               "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
               "scopes": [
                 "https://www.googleapis.com/auth/tasks"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
-                "IsFirstParty": "False"
-              },
-              "customParameters": {}
+                "isFirstParty": "False"
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Google Account",
@@ -677,7 +1497,7 @@
           "brandColor": "#3b5998"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/googletasks"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/googletasks"
         ],
         "generalInformation": {
           "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/googletasks.png",
@@ -689,10 +1509,254 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/googletasks",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/googletasks",
       "name": "googletasks",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "hidekey",
+        "connectionParameters": {},
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#de4c40",
+          "hideKey": "hidden"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/hidekey"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/wunderlist.png",
+          "displayName": "HideKey",
+          "description": "HideKey should be hidden.  For testing deployments."
+        },
+        "capabilities": []
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/hidekey",
+      "name": "hidekey",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "hipchat",
+        "connectionParameters": {
+          "accesstoken": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Peronal Access Token https://aka.ms/v6fdie",
+              "description": "Generate a personal access token with all scopes selected and paste it here.",
+              "tooltip": "Generate a personal access token with all scopes selected and paste it here.",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#2A5083"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/hipchat"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/hipchat.png",
+          "displayName": "HipChat",
+          "description": "HipChat is group chat, video chat and screen sharing tool for teams of all sizes. Built for business, HipChat is persistent, searchable and loaded with goodies your team will love."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/hipchat",
+      "name": "hipchat",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "informix",
+        "connectionParameters": {
+          "server": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Server",
+              "description": "Server",
+              "tooltip": "Server",
+              "constraints": {
+                "tabIndex": 1,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "database": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Database",
+              "description": "Database",
+              "tooltip": "Database",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "windows"
+              },
+              {
+                "value": "basic"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication",
+              "description": "Authentication type",
+              "tooltip": "Authentication type",
+              "constraints": {
+                "tabIndex": 3,
+                "required": "false",
+                "allowedValues": [
+                  {
+                    "text": "Windows",
+                    "value": "windows"
+                  },
+                  {
+                    "text": "Basic",
+                    "value": "basic"
+                  }
+                ],
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username",
+              "tooltip": "Username",
+              "constraints": {
+                "tabIndex": 4,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Password",
+              "constraints": {
+                "tabIndex": 5,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "informix",
+              "connectionDetails": [
+                "server",
+                "database"
+              ]
+            },
+            "uiDefinition": {
+              "constraints": {
+                "tabIndex": 6,
+                "required": "false",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#466bb0"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/informix"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/Informix.png",
+          "displayName": "Informix",
+          "description": "Microsoft Connector for Informix integrates Azure applications with resources stored in an IBM Informix database. Connector supports SELECT, INSERT, UPDATE, and DELETE operations."
+        },
+        "capabilities": [
+          "tabular",
+          "gateway",
+          "cloud"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/informix",
+      "name": "informix",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "insightly",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Insightly API Key",
+              "description": "Insightly API Key",
+              "tooltip": "Provide Your Insightly API Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#F0532D"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/insightly"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/insightly.png",
+          "displayName": "Insightly",
+          "description": "Insightly is the easiest customer relationship management solution (CRM) to use for managing deep customer relationships. Customers use Insightly's tightly integrated CRM & project management features to close new business, track post sale customer interactions & drive repeat purchases."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/insightly",
+      "name": "insightly",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -701,16 +1765,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "instagram",
+              "identityProvider": "Instagram",
               "clientId": "302ad4170bcf433c87cb44091f242487",
               "scopes": [
                 "basic"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Instagram Credentials",
@@ -727,7 +1790,7 @@
           "brandColor": "#3f729b"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/instagram"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/instagram"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/instagram.png",
@@ -739,10 +1802,190 @@
           "trigger"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/instagram",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/instagram",
       "name": "instagram",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "instapaper",
+        "connectionParameters": {
+          "username": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Instapaper Username",
+              "description": "Instapaper Username",
+              "tooltip": "Enter your username for Instapaper.",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Instapaper Password",
+              "description": "Instapaper Password",
+              "tooltip": "Enter your password for Instapaper.",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#000000"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/instapaper"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/instapaper.png",
+          "displayName": "Instapaper",
+          "description": "Instapaper is a tool for saving web pages to read later. You can create reading lists by organizing pages into folders which can then be accessed from any mobile or web client."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/instapaper",
+      "name": "instapaper",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "jira",
+        "connectionParameters": {
+          "jirainstance": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "JIRA instance",
+              "description": "The url where your JIRA instance is hosted (must support https) ",
+              "tooltip": "Provide your JIRA domain (eg. myjirainstance.atlassian.net or mycompany.com:443/jira)",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "username": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Your JIRA username",
+              "tooltip": "Provide your username",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Your JIRA password",
+              "tooltip": "Provide your password",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#59AFE1"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/jira"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/jira.png",
+          "displayName": "JIRA",
+          "description": "JIRA is a software development tool for agile teams to plan, track, and release world-class software. Connecting JIRA issues to the rest of your tools helps break down barriers and unleash the potential of your team."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/jira",
+      "name": "jira",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "madeira",
+        "connectionParameters": {
+          "subDomain": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "OData Feed URL",
+              "description": "OData Feed URL",
+              "tooltip": "Ex. https://<tenant>.financials.dynamics.com:port/<instance>/ODataV4",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username",
+              "tooltip": "Provide your username to login to Dynamics 365 for Financials",
+              "constraints": {
+                "clearText": true,
+                "required": "true"
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password",
+              "tooltip": "Provide your password to login to Dynamics 365 for Financials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "company": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Company",
+              "description": "Company",
+              "tooltip": "Ex. Cronus US",
+              "constraints": {
+                "clearText": true,
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#002050"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/madeira"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/Dyn365Financial.png",
+          "displayName": "Dynamics 365 for Financials",
+          "description": "Dynamics 365 for Financials is a business management solution for small and mid-sized organizations that automates and streamlines business processes and helps you manage your business."
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/madeira",
+      "name": "madeira",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -751,14 +1994,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "mailchimp",
+              "identityProvider": "MailChimp",
               "clientId": "717193793226",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with MailChimp Credentials",
@@ -775,22 +2017,22 @@
           "brandColor": "#249AB9"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/mailchimp"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/mailchimp"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/mailchimp.png",
           "displayName": "MailChimp",
-          "description": "MailChimp™ is an online service that allows businesses to manage and automate email marketing activities, including sending marketing emails, automated messages and targeted campaigns."
+          "description": "MailChimp is a SaaS service that allows businesses to manage and automate email marketing activities, including sending marketing emails, automated messages and targeted campaigns."
         },
         "capabilities": [
           "actions",
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/mailchimp",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/mailchimp",
       "name": "mailchimp",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -810,24 +2052,24 @@
         },
         "metadata": {
           "source": "marketplace",
-          "brandColor": "#42413F"
+          "brandColor": "#171717"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/mandrill"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/mandrill"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/mandrill.png",
           "displayName": "Mandrill",
-          "description": "Mandrill™ is a transactional email API for MailChimp users. It's reliable, powerful, and ideal for sending data driven emails, including targeted e-commerce and personalized one-to-one messages."
+          "description": "Mandrill is a transactional email API for MailChimp users. It's reliable, powerful, and ideal for sending data driven emails, including targeted e-commerce and personalized one-to-one messages."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/mandrill",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/mandrill",
       "name": "mandrill",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -841,21 +2083,208 @@
           }
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/microsofttranslator"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/microsofttranslator"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/microsofttranslator.png",
           "displayName": "Microsoft Translator",
-          "description": "Microsoft Translator is a cloud-based automatic translation service. Connect to Microsoft Translator to perform text translations. You can perform various actions such as detect languages, translate text, etc."
+          "description": "Microsoft Translator is a cloud based automatic translation service used by businesses worldwide to enable their content to reach a global audience."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/microsofttranslator",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/microsofttranslator",
       "name": "microsofttranslator",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "mq",
+        "connectionParameters": {
+          "server": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Server",
+              "description": "The host name and port the MQ server is running on (host:port).",
+              "tooltip": "Server",
+              "constraints": {
+                "tabIndex": 1,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "queueManager": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Queue Manager name",
+              "description": "The name of the Queue Manager to connect to.",
+              "tooltip": "Queue Manager name",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "channel": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Channel name",
+              "description": "The channel to connect to the Queue Manager on.",
+              "tooltip": "Channel name",
+              "constraints": {
+                "tabIndex": 3,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "queue": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Queue name",
+              "description": "The name of the Queue.",
+              "tooltip": "Queue name",
+              "constraints": {
+                "tabIndex": 4,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "connectAs": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Connect As",
+              "description": "The user name to use when connecting to MQ.",
+              "tooltip": "Connect As",
+              "constraints": {
+                "tabIndex": 5,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "basic"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication",
+              "description": "Authentication type to connect to your Queue Manager",
+              "tooltip": "Authentication type to connect to your Queue Manager",
+              "constraints": {
+                "tabIndex": 6,
+                "required": "false",
+                "allowedValues": [
+                  {
+                    "text": "Basic",
+                    "value": "basic"
+                  }
+                ],
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username credential",
+              "tooltip": "Username credential",
+              "constraints": {
+                "tabIndex": 7,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password credential",
+              "tooltip": "Password credential",
+              "constraints": {
+                "tabIndex": 8,
+                "required": "true",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "MQ",
+              "connectionDetails": [
+                "server",
+                "queueManager",
+                "channel",
+                "queue"
+              ]
+            },
+            "uiDefinition": {
+              "constraints": {
+                "tabIndex": 9,
+                "required": "false",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          }
+        },
+        "metadata": {
+          "allowSharing": true,
+          "source": "marketplace",
+          "brandColor": "#466BB0"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/mq"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/MQ.png",
+          "displayName": "MQ",
+          "description": "Microsoft Connector for MQ integrates Azure applications with resources stored in an IBM WebSphere MQ server. Supports message send and receive operations."
+        },
+        "capabilities": [
+          "actions",
+          "gateway",
+          "cloud"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/mq",
+      "name": "mq",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -867,11 +2296,64 @@
               "identityProvider": "office365certificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Office 365 Credentials",
+              "description": "Login with Office 365 Credentials",
+              "tooltip": "Provide Office 365 Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#0072c6"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/office365"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/outlook.png",
+          "displayName": "Office 365 Outlook",
+          "description": "Microsoft Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/office365",
+      "name": "office365",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "office365users",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "office365usercertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
               },
-              "customParameters": {}
+              "customParameters": {
+                "resourceUri": {
+                  "value": "https://graph.microsoft.com"
+                },
+                "tenantId": {
+                  "value": "microsoft.com"
+                }
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Office 365 Credentials",
@@ -888,68 +2370,21 @@
           "brandColor": "#eb3c00"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/office365"
-        ],
-        "generalInformation": {
-          "iconUrl": "https://az818438.vo.msecnd.net/icons/office365.png",
-          "displayName": "Office 365",
-          "description": "Microsoft Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity."
-        },
-        "capabilities": [
-          "actions"
-        ]
-      },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365",
-      "name": "office365",
-      "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
-    },
-    {
-      "properties": {
-        "name": "office365users",
-        "connectionParameters": {
-          "token": {
-            "type": "oauthSetting",
-            "oAuthSettings": {
-              "identityProvider": "office365usercertificate",
-              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
-              "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
-              "properties": {
-                "IsFirstParty": "True"
-              },
-              "customParameters": {}
-            },
-            "uiDefinition": {
-              "displayName": "Login with Office365 Credentials",
-              "description": "Login with Office365 Credentials",
-              "tooltip": "Provide Office365 Credentials",
-              "constraints": {
-                "required": "true"
-              }
-            }
-          }
-        },
-        "metadata": {
-          "source": "marketplace",
-          "brandColor": "#eb3c00"
-        },
-        "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/office365users"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/office365users"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/office365users.png",
           "displayName": "Office 365 Users",
-          "description": "Office 365 is a service that allows the use of Office applications and other productivity services over the Internet. Connect to Office 365 Users to access user profiles in your organization. You can perform various actions such as get a user's profile, a user's manager or direct reports, etc."
+          "description": "Office 365 Users Connection provider lets you access user profiles in your organization using your Office 365 account. You can perform various actions such as get your profile, a user's profile, a user's manager or direct reports and also update a user profile."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365users",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/office365users",
       "name": "office365users",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -961,11 +2396,10 @@
               "identityProvider": "sharepointonlinecertificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with SharePoint Online Credentials",
@@ -982,21 +2416,21 @@
           "brandColor": "#1b75bc"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/office365video"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/office365video"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/office365video.png",
           "displayName": "Office 365 Video",
-          "description": "Office 365 is a service that allows the use of Office applications and other productivity services over the Internet. Connect to to Office 365 Videos to interact with videos using your Office 365 account. You can perform various actions such as get a list of channels, get information about a particular channel, get list of videos on a channel, get information about a video and get information about playing a video."
+          "description": "Video for Office 365 offers a highly scalable, easy-to-use portal for uploading and sharing your corporate videos"
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/office365video",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/office365video",
       "name": "office365video",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1005,16 +2439,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "onedrive",
-              "clientId": "44da0bc6-ecea-41e8-a74c-532e754b2e68",
+              "identityProvider": "OneDrive",
+              "clientId": "2f81b9b5-c824-4057-a110-f823194ce28e",
               "scopes": [
                 "wl.signin wl.emails wl.offline_access onedrive.readwrite"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with OneDrive Credentials",
@@ -1031,7 +2464,7 @@
           "brandColor": "#094ab2"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/onedrive"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/onedrive"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/onedrive.png",
@@ -1042,10 +2475,10 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/onedrive",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/onedrive",
       "name": "onedrive",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1057,12 +2490,12 @@
               "identityProvider": "office365certificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
               },
               "customParameters": {
-                "Capability": {
+                "capability": {
                   "value": "MyFiles"
                 }
               }
@@ -1082,7 +2515,7 @@
           "brandColor": "#2151A3"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/onedriveforbusiness"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/onedriveforbusiness"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/onedriveforbusiness.png",
@@ -1093,10 +2526,10 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/onedriveforbusiness",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/onedriveforbusiness",
       "name": "onedriveforbusiness",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1106,15 +2539,14 @@
             "type": "oauthSetting",
             "oAuthSettings": {
               "identityProvider": "outlook",
-              "clientId": "44da0bc6-ecea-41e8-a74c-532e754b2e68",
+              "clientId": "2f81b9b5-c824-4057-a110-f823194ce28e",
               "scopes": [
                 "https://outlook.office.com/mail.readwrite https://outlook.office.com/mail.send https://outlook.office.com/contacts.readwrite https://outlook.office.com/calendars.readwrite"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Outlook.com Credentials",
@@ -1131,7 +2563,7 @@
           "brandColor": "#0072c6"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/outlook"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/outlook"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/outlook.png",
@@ -1142,10 +2574,98 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/outlook",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/outlook",
       "name": "outlook",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "pagerduty",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "PagerDuty API Key",
+              "description": "PagerDuty API Key",
+              "tooltip": "Provide Your PagerDuty API Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1F293A"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/pagerduty"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/pagerduty.png",
+          "displayName": "PagerDuty",
+          "description": "PagerDuty is an agile incident management platform that integrates with IT Ops and DevOps monitoring stacks to improve operational reliability and agility for organizations."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/pagerduty",
+      "name": "pagerduty",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "pinterest",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "pinterest",
+              "clientId": "4853159636072678043",
+              "scopes": [
+                "read_public",
+                "write_public",
+                "read_relationships",
+                "write_relationships"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Pinterest Account",
+              "description": "Login with Pinterest Account",
+              "tooltip": "Login with Pinterest Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#BD081C"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/pinterest"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/pinterest.png",
+          "displayName": "Pinterest",
+          "description": "Pinterest allows you to create a bulletin of photos called a Board. You can follow boards, add pins to existing ones or collaborate with people to build shared boards."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/pinterest",
+      "name": "pinterest",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1157,11 +2677,10 @@
               "identityProvider": "sharepointonlinecertificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with ProjectOnline Credentials",
@@ -1178,7 +2697,7 @@
           "brandColor": "#2D772A"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/projectonline"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/projectonline"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/projectonline.png",
@@ -1190,10 +2709,58 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/projectonline",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/projectonline",
       "name": "projectonline",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "redmine",
+        "connectionParameters": {
+          "apiKey": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "API Key",
+              "description": "API Key",
+              "tooltip": "Provide Your API Key",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "siteUrl": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Site url",
+              "description": "Root site url (Example: https://my.redmine.com )",
+              "tooltip": "Provide Your Site url",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#AD1300"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/redmine"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/redmine.png",
+          "displayName": "Redmine",
+          "description": "Redmine is a web based tool for software project management."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/redmine",
+      "name": "redmine",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1204,21 +2771,87 @@
           "brandColor": "#ff9900"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/rss"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/rss"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/rss.png",
           "displayName": "RSS",
-          "description": "RSS is a popular web syndication format used to publish frequently updated content ? like blog entries and news headlines.  Many content publishers provide an RSS feed to allow users to subscribe to it.  Use the RSS connector to retrieve feed information and trigger flows when new items are published in an RSS feed."
+          "description": "RSS is a popular web syndication format used to publish frequently updated content – like blog entries and news headlines.  Many content publishers provide an RSS feed to allow users to subscribe to it.  Use the RSS connector to retrieve feed information and trigger flows when new items are published in an RSS feed."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/rss",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/rss",
       "name": "rss",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "runtimeservice",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "aadcertificate",
+              "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
+              "scopes": [],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "True"
+              },
+              "customParameters": {
+                "resourceUri": {
+                  "value": "http://rts.powerapps.com"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Microsoft credentials",
+              "description": "Login with Microsoft credentials",
+              "tooltip": "Provide credentials for your org-based database on the Microsoft Common Data Service",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          },
+          "environment": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "Environment id",
+              "description": "Environment id",
+              "tooltip": "Environment id",
+              "constraints": {
+                "required": " false",
+                "hidden": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#742774",
+          "connectionLimits": {
+            "*": 1
+          }
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/runtimeservice"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/CommonDataModel.png",
+          "displayName": "Common Data Service",
+          "description": "Provides access to the org-based database on the Microsoft Common Data Service"
+        },
+        "capabilities": [
+          "tabular"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/runtimeservice",
+      "name": "runtimeservice",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1227,17 +2860,16 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "salesforce",
+              "identityProvider": "Salesforce",
               "clientId": "3MVG9fMtCkV6eLhcTB8jo.tx0X7AfQvXydoskslvPAODVJPQSeSPpCPhmkqjwpns2NMWYCoSH7gYU.NHKnWp0",
               "scopes": [
                 "api",
                 "refresh_token"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Salesforce Credentials",
@@ -1263,7 +2895,7 @@
               "description": "The Salesforce Login URI. For Production, leave blank or use https://login.salesforce.com",
               "tooltip": "The Salesforce Login URI. Leave blank for Production",
               "constraints": {
-                "required": false,
+                "required": "false",
                 "allowedValues": [
                   {
                     "text": "Production",
@@ -1283,7 +2915,7 @@
           "brandColor": "#1EB8EB"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/salesforce"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/salesforce"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/salesforce.png",
@@ -1294,10 +2926,10 @@
           "tabular"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/salesforce",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/salesforce",
       "name": "salesforce",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1320,21 +2952,21 @@
           "brandColor": "#34455F"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/sendgrid"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/sendgrid"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/sendgrid.png",
           "displayName": "SendGrid",
-          "description": "SendGrid is an email delivery infrastructure service which allows users to send transactional or marketing email. "
+          "description": "SendGrid Connection Provider lets you send email and manage recipient lists."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sendgrid",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/sendgrid",
       "name": "sendgrid",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1357,7 +2989,7 @@
           "brandColor": "#7fba00"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/servicebus"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/servicebus"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/servicebus.png",
@@ -1368,10 +3000,10 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/servicebus",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/servicebus",
       "name": "servicebus",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1449,7 +3081,7 @@
           "brandColor": "#e8bb00"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/sftp"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/sftp"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/sftp.png",
@@ -1460,10 +3092,10 @@
           "blob"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sftp",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/sftp",
       "name": "sftp",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1475,18 +3107,93 @@
               "identityProvider": "sharepointonlinecertificate",
               "clientId": "7ab7862c-4c57-491e-8a45-d52a7e023983",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "True"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
-              "displayName": "Login with SharePoint Online Credentials",
-              "description": "Login with SharePoint Online Credentials",
-              "tooltip": "Provide SharePoint Online Credentials",
+              "displayName": "Login with SharePoint Credentials",
+              "description": "Login with SharePoint Credentials",
+              "tooltip": "Provide SharePoint Credentials",
               "constraints": {
-                "required": "true"
+                "required": "true",
+                "capability": [
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "SharePoint",
+              "connectionDetails": []
+            },
+            "uiDefinition": {
+              "tabIndex": 1,
+              "constraints": {
+                "hidden": "true",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "windows"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication Type",
+              "description": "Authentication type to connect to your database",
+              "tooltip": "Authentication type to connect to your database",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "false",
+                "allowedValues": [
+                  {
+                    "text": "Windows",
+                    "value": "windows"
+                  }
+                ],
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "username": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Username",
+              "description": "Username credential",
+              "tooltip": "Username credential",
+              "constraints": {
+                "tabIndex": 3,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password credential",
+              "tooltip": "Password credential",
+              "constraints": {
+                "tabIndex": 4,
+                "required": "true",
+                "capability": [
+                  "gateway"
+                ]
               }
             }
           }
@@ -1496,21 +3203,23 @@
           "brandColor": "#1b75bc"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/sharepointonline"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/sharepointonline"
         ],
         "generalInformation": {
-          "iconUrl": "https://az818438.vo.msecnd.net/icons/sharepoint.png",
-          "displayName": "SharePoint Online",
-          "description": "SharePoint Online is a cloud-based service that helps organizations share and collaborate with colleagues, partners, and customers. Connect to SharePoint Online to manage documents and list items. You can perform various actions such as create, update, get, and delete on documents and list items."
+          "iconUrl": "https://az818438.vo.msecnd.net/icons/sharepointonline.png",
+          "displayName": "SharePoint",
+          "description": "SharePoint helps organizations share and collaborate with colleagues, partners, and customers. You can connect to SharePoint Online or to an on-premises SharePoint 2013 or 2016 farm using the On-Premises Data Gateway to manage documents and list items."
         },
         "capabilities": [
-          "tabular"
+          "tabular",
+          "gateway",
+          "cloud"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/sharepointonline",
       "name": "sharepointonline",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1519,14 +3228,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "slack",
+              "identityProvider": "Slack",
               "clientId": "3414960201.20026319686",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Slack Credentials",
@@ -1543,7 +3251,7 @@
           "brandColor": "#6ecadc"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/slack"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/slack"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/slack.png",
@@ -1554,10 +3262,58 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/slack",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/slack",
       "name": "slack",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "smartsheet",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "smartsheet",
+              "clientId": "18xapnvfkw2fevp15vp",
+              "scopes": [
+                "READ_SHEETS WRITE_SHEETS"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Smartsheet Account",
+              "description": "Login with Smartsheet Account",
+              "tooltip": "Login with Smartsheet Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#295177"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/smartsheet"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/smartsheet.png",
+          "displayName": "Smartsheet",
+          "description": "Smartsheet is a powerful work management and collaboration tool that lets you easily track and manage your work so you  and your team can be more productive than ever.  Use it to collaborate with others, track progress on any project, automate processes, and better structure your work."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/smartsheet",
+      "name": "smartsheet",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1624,7 +3380,7 @@
           "brandColor": "#e75300"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/smtp"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/smtp"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/smtp.png",
@@ -1635,10 +3391,10 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/smtp",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/smtp",
       "name": "smtp",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1661,7 +3417,7 @@
           "brandColor": "#FA6423"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/sparkpost"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/sparkpost"
         ],
         "generalInformation": {
           "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/sparkpost.png",
@@ -1673,23 +3429,129 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sparkpost",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/sparkpost",
       "name": "sparkpost",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
         "name": "sql",
         "connectionParameters": {
-          "sqlConnectionString": {
+          "server": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "SQL server name",
+              "description": "SQL server name",
+              "tooltip": "SQL server name",
+              "constraints": {
+                "tabIndex": 1,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "database": {
+            "type": "string",
+            "uiDefinition": {
+              "displayName": "SQL database name",
+              "description": "SQL database name",
+              "tooltip": "SQL database name",
+              "constraints": {
+                "tabIndex": 2,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "authType": {
+            "type": "string",
+            "allowedValues": [
+              {
+                "value": "windows"
+              },
+              {
+                "value": "basic"
+              }
+            ],
+            "uiDefinition": {
+              "displayName": "Authentication Type",
+              "description": "Authentication type to connect to your database",
+              "tooltip": "Authentication type to connect to your database",
+              "constraints": {
+                "tabIndex": 3,
+                "required": "false",
+                "allowedValues": [
+                  {
+                    "text": "Windows",
+                    "value": "windows"
+                  },
+                  {
+                    "text": "Basic",
+                    "value": "basic"
+                  }
+                ],
+                "capability": [
+                  "gateway"
+                ]
+              }
+            }
+          },
+          "username": {
             "type": "securestring",
             "uiDefinition": {
-              "displayName": "SQL Connection String",
-              "description": "SQL Connection String",
-              "tooltip": "Provide Your SQL Connection String",
+              "displayName": "Username",
+              "description": "Username credential",
+              "tooltip": "Username credential",
               "constraints": {
-                "required": "true"
+                "tabIndex": 4,
+                "clearText": true,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "password": {
+            "type": "securestring",
+            "uiDefinition": {
+              "displayName": "Password",
+              "description": "Password credential",
+              "tooltip": "Password credential",
+              "constraints": {
+                "tabIndex": 5,
+                "required": "true",
+                "capability": [
+                  "gateway",
+                  "cloud"
+                ]
+              }
+            }
+          },
+          "gateway": {
+            "type": "gatewaySetting",
+            "gatewaySettings": {
+              "dataSourceType": "sql",
+              "connectionDetails": [
+                "server",
+                "database"
+              ]
+            },
+            "uiDefinition": {
+              "constraints": {
+                "tabIndex": 6,
+                "required": "false",
+                "capability": [
+                  "gateway"
+                ]
               }
             }
           }
@@ -1700,21 +3562,74 @@
           "brandColor": "#ba141a"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/sql"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/sql"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/sql.png",
-          "displayName": "Sql Azure",
+          "displayName": "SQL Server",
           "description": "Microsoft SQL Server is a relational database management system developed by Microsoft. Connect to SQL Server to manage data. You can perform various actions such as create, update, get, and delete on rows in a table."
         },
         "capabilities": [
-          "tabular"
+          "tabular",
+          "gateway",
+          "cloud"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/sql",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/sql",
       "name": "sql",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "todoist",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "Todoist",
+              "clientId": "fe009e0ee5cd4f5ab435e906827155de",
+              "scopes": [
+                "task:add",
+                "data:read_write",
+                "data:delete",
+                "project:delete"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Todoist Account",
+              "description": "Login with Todoist Account",
+              "tooltip": "Login with Todoist Account",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#E44332"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/todoist"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/todoist.png",
+          "displayName": "Todoist",
+          "description": "Todoist is an online task management app and todo list. With Todoist, users can organize, schedule, maintain and prioritize personal tasks."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/todoist",
+      "name": "todoist",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1723,18 +3638,18 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "trello",
+              "identityProvider": "Trello",
               "clientId": "812aac1ad766c74e3094b265b908bd4a",
               "scopes": [
                 "read",
                 "write"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
               },
               "customParameters": {
-                "ApplicationDisplayName": {
+                "applicationDisplayName": {
                   "value": "Power Apps"
                 }
               }
@@ -1754,7 +3669,7 @@
           "brandColor": "#0079BF"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/trello"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/trello"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/trello.png",
@@ -1766,10 +3681,10 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/trello",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/trello",
       "name": "trello",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1803,21 +3718,21 @@
           "brandColor": "#e22228"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/twilio"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/twilio"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/twilio.png",
           "displayName": "Twilio",
-          "description": "Twilio is a service that enables apps to send and receive global SMS, MMS and IP messages."
+          "description": "Twilio enables apps to send and receive global SMS, MMS and IP messages."
         },
         "capabilities": [
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/twilio",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/twilio",
       "name": "twilio",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1826,14 +3741,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "twitter",
+              "identityProvider": "Twitter",
               "clientId": "bChNxr15F587ndSfLbiuXCiCu",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Twitter Credentials",
@@ -1853,7 +3767,7 @@
           }
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/twitter"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/twitter"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/twitter.png",
@@ -1864,10 +3778,173 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/twitter",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/twitter",
       "name": "twitter",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "vimeo",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "oauth2",
+              "clientId": "a8f9c77557913ada052af73a9c12077faa8cbeb9",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {
+                "authorizationUrl": {
+                  "value": "https://api.vimeo.com/oauth/authorize"
+                },
+                "tokenUrl": {
+                  "value": "https://api.vimeo.com/oauth/access_token"
+                },
+                "refreshUrl": {
+                  "value": "https://api.vimeo.com/oauth/access_token"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Vimeo credentials",
+              "description": "Login with Vimeo credentials",
+              "tooltip": "Login with Vimeo credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#1AB7EA"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/vimeo"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/vimeo.png",
+          "displayName": "Vimeo",
+          "description": "Vimeo is a powerful tool for video management, marketing, and analytics all in one place."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/vimeo",
+      "name": "vimeo",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "visualstudioteamservices",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "visualstudio",
+              "clientId": "1496733F-D72C-48AF-A5E5-AB99CA70D336",
+              "scopes": [
+                "vso.agentpools_manage vso.build_execute vso.chat_manage vso.code_manage vso.code_status vso.connected_server vso.dashboards_manage vso.entitlements vso.extension.data_write vso.extension_manage vso.identity vso.loadtest_write vso.packaging_manage vso.project_manage vso.release_manage vso.test_write vso.work_write"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with Visual Studio Team Services Credentials",
+              "description": "Login with Visual Studio Team Services Credentials",
+              "tooltip": "Provide Visual Studio Team Services Credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#732793"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/visualstudioteamservices"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/visualstudioteamservices.png",
+          "displayName": "Visual Studio Team Services",
+          "description": "Visual Studio Team Services provides services for teams to share code, track work, and ship software - for any language, all in a single package. It's the perfect complement to your IDE."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/visualstudioteamservices",
+      "name": "visualstudioteamservices",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
+    },
+    {
+      "properties": {
+        "name": "wordpress",
+        "connectionParameters": {
+          "token": {
+            "type": "oauthSetting",
+            "oAuthSettings": {
+              "identityProvider": "oauth2",
+              "clientId": "50280",
+              "scopes": [
+                "global"
+              ],
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
+              "properties": {
+                "IsFirstParty": "False"
+              },
+              "customParameters": {
+                "authorizationUrl": {
+                  "value": "https://public-api.wordpress.com/oauth2/authorize"
+                },
+                "tokenUrl": {
+                  "value": "https://public-api.wordpress.com/oauth2/token"
+                },
+                "refreshUrl": {
+                  "value": "https://public-api.wordpress.com/oauth2/token"
+                }
+              }
+            },
+            "uiDefinition": {
+              "displayName": "Login with WordPress credentials",
+              "description": "Login with WordPress credentials",
+              "tooltip": "Login with WordPress credentials",
+              "constraints": {
+                "required": "true"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "source": "marketplace",
+          "brandColor": "#21759b"
+        },
+        "runtimeUrls": [
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/wordpress"
+        ],
+        "generalInformation": {
+          "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/wordpress.png",
+          "displayName": "WordPress",
+          "description": "WordPress is web software you can use to create a beautiful website, blog, or app."
+        },
+        "capabilities": [
+          "actions"
+        ]
+      },
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/wordpress",
+      "name": "wordpress",
+      "type": "Microsoft.Web/locations/managedApis",
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1876,14 +3953,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "wunderlist",
-              "clientId": "5fa5b61c1e8c79d6a58d",
+              "identityProvider": "Wunderlist",
+              "clientId": "e422e3541056eaf17d2d",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Wunderlist Credentials",
@@ -1900,22 +3976,22 @@
           "brandColor": "#de4c40"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/wunderlist"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/wunderlist"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/wunderlist.png",
           "displayName": "Wunderlist",
-          "description": "Wunderlist provide a todo list and task manager to help people get their stuff done.  Whether you?re sharing a grocery list with a loved one, working on a project, or planning a vacation, Wunderlist makes it easy to capture, share, and complete your to?dos. Wunderlist instantly syncs between your phone, tablet and computer, so you can access all your tasks from anywhere."
+          "description": "Wunderlist provide a todo list and task manager to help people get their stuff done.  Whether you’re sharing a grocery list with a loved one, working on a project, or planning a vacation, Wunderlist makes it easy to capture, share, and complete your to-dos. Wunderlist instantly syncs between your phone, tablet and computer, so you can access all your tasks from anywhere."
         },
         "capabilities": [
           "actions",
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/wunderlist",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/wunderlist",
       "name": "wunderlist",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1950,7 +4026,7 @@
           "connectionType": "integrationAccount"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/x12"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/x12"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/x12.png",
@@ -1961,10 +4037,10 @@
           "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/x12",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/x12",
       "name": "x12",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -1973,14 +4049,13 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "yammer",
-              "clientId": "Mwe8rdOp2Hl6X2Gt8cF6g",
+              "identityProvider": "Yammer",
+              "clientId": "Cj2o183KnPZy4Ny8zudyJQ",
               "scopes": [],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Yammer Credentials",
@@ -1997,7 +4072,7 @@
           "brandColor": "#0092bd"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/yammer"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/yammer"
         ],
         "generalInformation": {
           "iconUrl": "https://az818438.vo.msecnd.net/icons/yammer.png",
@@ -2009,10 +4084,10 @@
           "triggers"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/yammer",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/yammer",
       "name": "yammer",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     },
     {
       "properties": {
@@ -2021,16 +4096,15 @@
           "token": {
             "type": "oauthSetting",
             "oAuthSettings": {
-              "identityProvider": "google",
+              "identityProvider": "Google",
               "clientId": "972489997876-8op8gd42ke0d43bompbilqqn9oh06r4u.apps.googleusercontent.com",
               "scopes": [
                 "https://www.googleapis.com/auth/youtube"
               ],
-              "redirectUrl": "https://logic-apis-eastus.consent.azure-apim.net/redirect",
+              "redirectUrl": "https://logic-apis-brazilsouth.consent.azure-apim.net/redirect",
               "properties": {
                 "IsFirstParty": "False"
-              },
-              "customParameters": {}
+              }
             },
             "uiDefinition": {
               "displayName": "Login with Google Account",
@@ -2047,7 +4121,7 @@
           "brandColor": "#CD201F"
         },
         "runtimeUrls": [
-          "https://logic-apis-eastus.azure-apim.net/apim/youtube"
+          "https://logic-apis-brazilsouth.azure-apim.net/apim/youtube"
         ],
         "generalInformation": {
           "iconUrl": "https://cpgeneralstore.blob.core.windows.net/icons/youtube.png",
@@ -2055,14 +4129,13 @@
           "description": "YouTube allows billions of people to discover, watch and share originally-created videos. YouTube provides a forum for people to connect, inform, and inspire others across the globe and acts as a distribution platform for original content creators and advertisers large and small."
         },
         "capabilities": [
-          "actions",
-          "triggers"
+          "actions"
         ]
       },
-      "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/eastus/managedApis/youtube",
+      "id": "/subscriptions/7e6ec17f-2abc-4559-a23d-f6520cbb89a6/providers/Microsoft.Web/locations/brazilsouth/managedApis/youtube",
       "name": "youtube",
       "type": "Microsoft.Web/locations/managedApis",
-      "location": "eastus"
+      "location": "brazilsouth"
     }
   ]
 }
